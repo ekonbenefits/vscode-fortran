@@ -1,7 +1,7 @@
 {
     "name": "fortran-ekon",
     "displayName": "fortran - ekon",
-    "description": "An extension for VS Code which provides syntax highlight support for the Fortran language.",
+    "description": "An extension for VS Code which provides syntax highlight support for the Fortran language. With some modifications on File extensions and Comments for EkonBenefits.",
     "version": "0.0.1",
     "publisher": "ekon",
     "license": "SEE LICENSE IN LICENSE.md",
