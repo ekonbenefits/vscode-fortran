@@ -1,9 +1,9 @@
 {
-    "name": "fortran",
-    "displayName": "fortran",
-    "description": "An extension for VS Code which provides support for the Fortran language.",
-    "version": "0.2.0",
-    "publisher": "Gimly81",
+    "name": "fortran-ekon",
+    "displayName": "fortran - ekon",
+    "description": "An extension for VS Code which provides syntax highlight support for the Fortran language.",
+    "version": "0.0.1",
+    "publisher": "ekon",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {
         "vscode": "^1.16.0"
@@ -15,14 +15,11 @@
     "homepage": "https://github.com/Gimly/vscode-fortran/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Gimly/vscode-fortran.git"
+        "url": "https://github.com/ekonbenefits/vscode-fortran.git"
     },
-    "activationEvents": [
-        "onLanguage:fortran-modern"
-    ],
     "main": "./out/src/extension",
     "icon": "images/icon.png",
-    "bugs": "https://github.com/Gimly/vscode-fortran/issues",
+    "bugs": "https://github.com/ekonbenefits/vscode-fortran/issues",
     "contributes": {
         "languages": [
             {
@@ -39,44 +36,20 @@
                     ".for",
                     ".FOR",
                     ".fpp",
-                    ".FPP"
+                    ".FPP",
+                    ".CVR",
+                    ".DEC",  
+                    ".cvr",
+                    ".dec"
                 ],
                 "configuration": "./fortran.configuration.json"
-            },
-            {
-                "id": "fortran-modern",
-                "aliases": [
-                    "Fortran - Modern"
-                ],
-                "extensions": [
-                    ".f90",
-                    ".F90",
-                    ".f95",
-                    ".F95",
-                    ".f03",
-                    ".F03",
-                    ".f08",
-                    ".F08"
-                ],
-                "configuration": "./modern.configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "fortran-modern",
-                "scopeName": "source.fortran.modern",
-                "path": "./syntaxes/modern.tmLanguage"
-            },
-            {
                 "language": "fortran",
                 "scopeName": "source.fortran",
                 "path": "./syntaxes/fortran.tmLanguage"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "fortran-modern",
-                "path": "./snippets/fortran.json"
             }
         ]
     },
