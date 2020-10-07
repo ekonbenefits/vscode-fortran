@@ -9,15 +9,13 @@
         "vscode": "^1.16.0"
     },
     "categories": [
-        "Languages",
-        "Snippets"
+        "Programming Languages"
     ],
     "homepage": "https://github.com/Gimly/vscode-fortran/blob/master/README.md",
     "repository": {
         "type": "git",
         "url": "https://github.com/ekonbenefits/vscode-fortran.git"
     },
-    "main": "./out/src/extension",
     "icon": "images/icon.png",
     "bugs": "https://github.com/ekonbenefits/vscode-fortran/issues",
     "contributes": {
